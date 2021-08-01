@@ -1,7 +1,15 @@
-const btn = document.querySelector(".mobile-menu-button");
-const sidebar = document.querySelector(".sidebar");
+function responsive() {
+    const btn = document.querySelector(".mobile-menu-button");
+    const sidebar = document.querySelector(".sidebar");
+    
+    btn.addEventListener("click", () => {
+        console.log('bruh');
+        sidebar.classList.toggle("-translate-x-full");
+    })
+}
 
+responsive();
 
-btn.addEventListener("click", () => {
-    sidebar.classList.toggle("-translate-x-full");
+window.addEventListener("hashchange", () => {
+    responsive();
 });
