@@ -3,13 +3,13 @@ function responsive() {
     const sidebar = document.querySelector(".sidebar");
     
     btn.addEventListener("click", () => {
-        console.log('bruh');
         sidebar.classList.toggle("-translate-x-full");
     })
 }
 
-responsive();
-
-window.addEventListener("hashchange", () => {
+window.addEventListener("load", () => {
     responsive();
+    window.addEventListener("hashchange", () => {
+        responsive();
+    });
 });
