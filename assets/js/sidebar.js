@@ -9,6 +9,7 @@ function responsive() {
 
 window.addEventListener("load", () => {
     setTimeout(function update() {
+        const sidebar = document.querySelector(".sidebar");
         if (sidebar.classList.contains("-translate-x-full")) {
             responsive();
         }
