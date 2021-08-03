@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
             responsive();
             console.log('changed');
         }
-    }, 100)
+    }, 300)
 });
 
 window.addEventListener("hashchange", () => {
