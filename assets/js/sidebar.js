@@ -9,7 +9,4 @@ function responsive() {
 
 window.addEventListener("load", () => {
     responsive();
-    window.addEventListener("hashchange", () => {
-        responsive();
-    });
 });
