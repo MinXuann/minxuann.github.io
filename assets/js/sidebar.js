@@ -12,10 +12,12 @@ window.addEventListener("load", () => {
         const sidebar = document.querySelector(".sidebar");
         if (sidebar.classList.contains("-translate-x-full")) {
             responsive();
+            console.log('changed');
         }
     }, 100)
 });
 
 window.addEventListener("hashchange", () => {
     responsive();
+    console.log('hash');
 });
