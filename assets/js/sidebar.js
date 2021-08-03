@@ -12,9 +12,6 @@ window.addEventListener("load", () => {
         if (sidebar.classList.contains("-translate-x-full")) {
             responsive();
         }
-        else {
-            break;
-        }
     }, 100)
 });
 
