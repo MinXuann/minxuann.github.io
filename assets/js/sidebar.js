@@ -8,7 +8,14 @@ function responsive() {
 }
 
 window.addEventListener("load", () => {
-    responsive();
+    setTimeout(function update() {
+        if (sidebar.classList.contains("-translate-x-full")) {
+            responsive();
+        }
+        else {
+            break;
+        }
+    }, 100)
 });
 
 window.addEventListener("hashchange", () => {
