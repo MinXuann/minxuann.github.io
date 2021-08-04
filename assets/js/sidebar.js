@@ -15,8 +15,10 @@ window.addEventListener("hashchange", () => {
 });
 
 window.addEventListener("load", () => {
-    if (!stopChange) {
-        responsive();
-    }
+    setTimeout(function () {
+        if (!stopChange) {
+            responsive();
+        }
+    }, 100)
 });
 
